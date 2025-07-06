@@ -9,12 +9,12 @@ export default function ThemeToggle() {
   const { setTheme, theme, resolvedTheme } = useTheme()
 
   function toggleTheme() {
-    if (theme === 'system') {
-      if (resolvedTheme === 'light') setTheme('dark');
-      if (resolvedTheme === 'dark') setTheme('light');
+    if (theme === "system") {
+      if (resolvedTheme === "light") setTheme("dark")
+      if (resolvedTheme === "dark") setTheme("light")
     }
-    if (theme === 'dark') setTheme('light');
-    if (theme === 'light') setTheme('dark');
+    if (theme === "dark") setTheme("light")
+    if (theme === "light") setTheme("dark")
   }
 
   return (
